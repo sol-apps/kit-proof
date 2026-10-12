@@ -23,3 +23,5 @@
 //   record.set("note", "hello from a server-side cron");
 //   $app.save(record);
 // });
+
+routerAdd("GET", "/api/proof", (e) => e.json(200, { ok: true, from: "second push" }));
